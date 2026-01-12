@@ -1,0 +1,23 @@
+.nav {
+    background: transparent; 
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;     
+    gap: 15px;                 
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0);
+}
+
+.nav-button {
+    border-color: #03a9f4;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background-color: #03a9f4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background-color: #01579b;
+}
