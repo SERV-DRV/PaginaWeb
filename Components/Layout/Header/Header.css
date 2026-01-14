@@ -1,6 +1,22 @@
-.header {
-    background-color: #0288d1;
-    padding: 20px;
-    text-align: center;
-    color: white;
+.headerPagina {
+    background-color: #1a3668;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.headerPagina .contenedorPrincipal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerTexto {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.headerItemsMenu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
 }

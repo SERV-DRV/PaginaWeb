@@ -1,17 +1,59 @@
-.contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
+.container {
+    padding: 80px 0;
 }
 
-.cuadro {
-    background-color: #b3e5fc;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
+.contenedorTarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.tarjetaIndividual {
+    padding: 40px;
+    border-radius: 15px;
     display: flex;
-    flex-direction: column; 
-    width: 40%;            
-    float: left;          
+    flex-direction: column;
+}
+
+.tarjetaAzul {
+    background-color: #1a3668;
+    color: #ffffff;
+}
+
+.tarjetaBlanca {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+
+.tarjetaGris {
+    background-color: #f1f3f5;
+    border: 2px solid #1a3668;
+}
+
+.tituloTarjeta {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #c5a021;
+    padding-bottom: 5px;
+    width: fit-content;
+}
+
+.cuadroBiografia {
+    background-color: #eef2f8;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.contenedorInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.cajaDetalle {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 8px solid;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }
