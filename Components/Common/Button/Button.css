@@ -1,4 +1,7 @@
 .btnMenu {
+    background: none;
+    border: none;
+    cursor: pointer; 
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
