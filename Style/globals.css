@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f9fafb;
     color: #374151;
@@ -12,54 +12,65 @@
 }
 
 .contenedorPrincipal {
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 2vw 5vw;
 }
 
 .tituloPrincipal {
-    font-size: 3rem;
+    font-size: 3vw;
+    max-font-size: 3rem;
+    text-align: center;
     margin-bottom: 10px;
 }
 
 .subtituloPrincipal {
     color: #c5a021;
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
+    max-font-size: 1.2rem;
     font-weight: 300;
+    text-align: center;
 }
 
 .subtituloSecundario {
     color: #c5a021;
-    font-size: 1.1rem;
+    font-size: 2.2vw;
+    max-font-size: 1.1rem;
     margin-top: 10px;
+    text-align: center;
 }
 
 .lineaDivisora {
     height: 4px;
-    width: 70px;
+    width: 15vw;
+    max-width: 70px;
     background-color: #c5a021;
     margin: 20px auto 40px;
 }
 
 .parrafo {
     text-align: center;
+    text-align: justify;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto 50px;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
 }
 
 .textoLargo {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.8;
     text-align: center;
     margin-bottom: 40px;
+    padding: 0 1rem;
 }
 
-.bordeAzul { 
-    border-left-color: #1a3668;
+.bordeAzul {
+    border-left: 4px solid #1a3668;
 }
 
-.bordeOro { 
-    border-left-color: #c5a021;
+.bordeOro {
+    border-left: 4px solid #c5a021;
 }
