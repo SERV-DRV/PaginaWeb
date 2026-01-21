@@ -1,13 +1,23 @@
 .heroPrincipal {
     background-color: #1a3668;
     color: #ffffff;
-    padding: 100px 20px;
-    text-align: center;
+    padding: 60px 20px;
+    text-align: right;
 }
 
 .heroSecundary {
     background-color: #122342;
-    padding: 70px 20px;
+    padding: 50px 20px;
     text-align: center;
     color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .heroPrincipal {
+        padding: 100px 20px;
+    }
+
+    .heroSecundary {
+        padding: 70px 20px;
+    }
 }

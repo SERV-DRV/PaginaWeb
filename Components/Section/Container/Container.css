@@ -1,15 +1,15 @@
 .container {
-    padding: 80px 0;
+    padding: 40px 15px;
 }
 
 .contenedorTarjetas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+    gap: 20px;
 }
 
 .tarjetaIndividual {
-    padding: 40px;
+    padding: 25px;
     border-radius: 15px;
     display: flex;
     font-size: 1rem;
@@ -40,53 +40,49 @@
 }
 
 .cuadroBiografia {
-    background-color: #eef2f8;
-    padding: 50px;
-    border-radius: 30px;
-}
-
-.contenedorInfo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.cajaDetalle {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 15px;
-    border-left: 8px solid;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-}
-
-
-.seccionBiografia {
-    padding: 50px 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.cuadroBiografia {
     background-color: #ffffff;
     max-width: 900px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden; 
     padding: 20px;
-    gap: 30px;
+    gap: 20px;
+}
+
+.contenedorInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.cajaDetalle {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    border-left: 8px solid;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.seccionBiografia {
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .biografiaTexto {
     flex: 1;
+    width: 100%;
 }
 
 .biografiaTexto h2 {
     color: #1a3a5a; 
     margin-bottom: 15px;
-    font-size: 24px;
+    font-size: 22px;
+    text-align: center;
 }
 
 .biografiaTexto p {
@@ -97,12 +93,49 @@
 
 .biografiaImagen {
     flex: 1;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.biografiaImagen {
+.biografiaImagen img {
     width: 100%;
-    height: 300px;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
     border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 80px 0;
+    }
+
+    .tarjetaIndividual {
+        padding: 40px;
+    }
+
+    .cuadroBiografia {
+        flex-direction: row;
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .contenedorInfo {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .biografiaTexto h2 {
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .biografiaTexto p {
+        text-align: justify;
+    }
+
+    .biografiaImagen img {
+        height: 300px;
+    }
 }
